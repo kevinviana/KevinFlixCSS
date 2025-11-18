@@ -1,2 +1,2 @@
-# FlixflexCSS
-The CSS of my website
+# KevinFlixCSS
+The CSS of my Jellyfin Instance
