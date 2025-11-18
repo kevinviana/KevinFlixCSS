@@ -1,3 +1,5 @@
+@import url("https://cdn.jsdelivr.net/gh/Druidblack/jellyfin-icon-metadata@main/public-icon.css");
+
 /* Defining color variables for the theme */
 :root {
   --accent1-light: #a95bc2;
@@ -55,11 +57,11 @@
 #itemDetailPage .mainDetailButtons .emby-button:not([data-action=resume],[data-action=play]) {
   background: transparent !important;
 }
-
+/*
 #itemDetailPage .detailLogo {
   display: none;
 }
-
+*/
 #itemDetailPage .emby-button {
   align-items: center;
   background: transparent !important;
@@ -78,10 +80,11 @@
   background: hsla(0,0%,100%,.1) !important;
   color: #fff;
 }
-
+/* 
 #itemDetailPage .emby-button:not([is=emby-linkbutton]):after {
   display: none;
-}
+} 
+*/
 
 #itemDetailPage .emby-button[title=Play],
 #itemDetailPage .emby-button[title=Resume] {
@@ -361,7 +364,7 @@ layout-mobile #itemDetailPage .detailImageContainer .card {
 body, h1, h2, h4, h5, html {
   font-family: Rubik, sans-serif;
 }
-
+/* 
 #itemDetailPage > div.detailPageWrapperContainer > div.detailPagePrimaryContainer > div.detailRibbon.padded-left.padded-right > div.infoWrapper > div.itemMiscInfo.itemMiscInfo-primary > div.starRatingContainer.mediaInfoItem {
   display: none;
 }
@@ -373,6 +376,7 @@ body, h1, h2, h4, h5, html {
 #itemDetailPage > div.detailPageWrapperContainer > div.detailPagePrimaryContainer > div.detailRibbon.padded-left.padded-right > div.infoWrapper > div.itemMiscInfo.itemMiscInfo-primary > div.mediaInfoItem.mediaInfoItem-audioLanguage > span {
   display: none;
 }
+*/
 
 /* ======================================== */
 /* === PLAYER === */
@@ -651,6 +655,7 @@ body, h1, h2, h4, h5, html {
 /* Keep original transparency - only enhance the base background */
 
 /* --- Header button hiders ---*/
+/*
 .sectionTabs {
   display: none;
 }
@@ -674,26 +679,27 @@ button.headerSyncButton.syncButton.headerButton.headerButtonRight.paper-icon-but
 button.headerButton.mainDrawerButton.barsMenuButton.headerButtonLeft.paper-icon-button-light {
   display: none !important;
 }
-
+*/
 /* --- Logos & Loading --- */
 #page-loader.bar-loading h1 {
-  content: url(https://i.imgur.com/zDZT76x.png) !important;
+  content: url(https://i.imgur.com/rVMrZ6n.png) !important;
 }
 
 .adminDrawerLogo img {
-  content: url(https://i.imgur.com/CDAzLxe.png) !important;
+  content: url(https://i.imgur.com/yv52S4U.png) !important;
 }
 
 imgLogoIcon {
-  content: url(https://i.imgur.com/CDAzLxe.png) !important;
+  content: url(https://i.imgur.com/yv52S4U.png) !important;
 }
 
 .pageTitleWithLogo {
-  background-image: url(https://i.imgur.com/CDAzLxe.png) !important;
+  background-image: url(https://i.imgur.com/yv52S4U.png) !important;
 }
 
 /* --- Hide Guests and Cast --- */
-#scenesCollapsible {
+/*
+ #scenesCollapsible {
   display: none;
 }
 
@@ -704,6 +710,7 @@ imgLogoIcon {
 #guestCastCollapsible {
   display: none;
 }
+   */
 
 /* --- Various stuff --- */
 /* make logo as big as possible */
@@ -722,12 +729,13 @@ imgLogoIcon {
 :not(.detailPage) .skinHeader {
   background: var(--header-bg) !important;
 }
-
+/*
 #slides-container > div.dots-container {
   display: none !important;
 }
-
+*/
 /* hide every favorite button inside slides */
+/*
 #slides-container .favorite-button {
   display: none !important;
 }
@@ -756,20 +764,30 @@ div.verticalSection.searchSuggestions {
 #reactRoot > div:nth-child(3) > div.skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred.noHomeButtonHeader > div.headerTabs.sectionTabs > div > div {
   display: none;
 }
-
+*/
 /* --- Login page --- */
 #loginPage {
   background: url('https://cdna.artstation.com/p/assets/images/images/083/855/516/large/tarjei-mykland-loop-30.jpg?1736950534') !important;
   background-size: cover !important;
   background-position: center center !important;
   background-repeat: no-repeat !important;
+  max-height: 100vh;
 }
 
-#loginPage > div > div.readOnlyContent {
-  display: none;
+#loginPage > div > div.readOnlyContent > button {
+  color: crimson;
+  font-size: small;
+  text-decoration: underline;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
-
+.btnForgotPassword {
+  display: none !important;
+}
 
 #loginPage > div > form > div.padded-left.padded-right.flex.align-items-center.justify-content-center > h1 {
   font-size: 0;
@@ -782,7 +800,7 @@ div.verticalSection.searchSuggestions {
   display: inline-block;
   width: 200px;
   height: 80px;
-  background-image: url("https://i.imgur.com/CDAzLxe.png");
+  background-image: url("https://i.imgur.com/yv52S4U.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -790,10 +808,11 @@ div.verticalSection.searchSuggestions {
 
 #loginPage > div {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  transform: scale(1.5);
+  transform: scale(1.2);
   transform-origin: center;
   text-align: center;
 }
@@ -810,6 +829,7 @@ div.verticalSection.searchSuggestions {
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-height: 100svh;
 }
 
 /* Make sure the login button and remember me align nicely */
@@ -820,6 +840,22 @@ div.verticalSection.searchSuggestions {
 
 #loginPage form .checkboxContainer {
   order: 2;
+}
+
+.content-primary, .padded-bottom-page, .page, .pageWithAbsoluteTabs .pageTabContent {
+  padding-bottom: 0 !important;
+}
+
+#loginPage > div > div.readOnlyContent {
+  margin: 0 auto !important;
+}
+
+.loginDisclaimerContainer  {
+  margin: 0 auto !important;
+}
+
+.loginDisclaimerContainer > .loginDisclaimer > p {
+  margin-bottom: 0;
 }
 
 /* Phone stuff */
@@ -857,22 +893,3 @@ div.verticalSection.searchSuggestions {
     height: 14px;
   }
 }
-
-/*ANNOUNCMENT BANNER*/
-
-body.libraryDocument .skinHeader::after {
-    content: "Got it working i think? Tell me if anything looks funky";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-weight: bold;
-    font-size: clamp(0.5rem, 1.2vw, 1rem); /* scales with screen size */
-    pointer-events: none;
-    white-space: normal;       /* allows wrapping */
-    text-align: center;
-    max-width: 80vw;           /* prevents spilling */
-    line-height: 1.3;          /* improve readability when wrapping */
-}
-
