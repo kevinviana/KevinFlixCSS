@@ -682,19 +682,19 @@ button.headerButton.mainDrawerButton.barsMenuButton.headerButtonLeft.paper-icon-
 */
 /* --- Logos & Loading --- */
 #page-loader.bar-loading h1 {
-  content: url(https://i.imgur.com/rVMrZ6n.png) !important;
+  content: url(https://i.imgur.com/0rVbV7v.png) !important;
 }
 
 .adminDrawerLogo img {
-  content: url(https://i.imgur.com/yv52S4U.png) !important;
+  content: url(https://i.imgur.com/0rVbV7v.png) !important;
 }
 
 imgLogoIcon {
-  content: url(https://i.imgur.com/yv52S4U.png) !important;
+  content: url(https://i.imgur.com/0rVbV7v.png) !important;
 }
 
 .pageTitleWithLogo {
-  background-image: url(https://i.imgur.com/yv52S4U.png) !important;
+  background-image: url(https://i.imgur.com/0rVbV7v.png) !important;
 }
 
 /* --- Hide Guests and Cast --- */
