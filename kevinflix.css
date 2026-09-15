@@ -43,10 +43,10 @@
 
 #itemDetailPage .detailImageContainer .card {
   border-radius: 10px;
-  left: 3.3%;
-  position: fixed !important;
-  top: calc(50% + 1em);
-  transform: translateY(-50%);
+  position: static !important;
+  left: auto;
+  top: auto;
+  transform: none;
   width: 25vw;
 }
 
@@ -682,19 +682,19 @@ button.headerButton.mainDrawerButton.barsMenuButton.headerButtonLeft.paper-icon-
 */
 /* --- Logos & Loading --- */
 #page-loader.bar-loading h1 {
-  content: url(https://i.imgur.com/0rVbV7v.png) !important;
+  content: url(https://i.imgur.com/rVMrZ6n.png) !important;
 }
 
 .adminDrawerLogo img {
-  content: url(https://i.imgur.com/0rVbV7v.png) !important;
+  content: url(https://i.imgur.com/yv52S4U.png) !important;
 }
 
 imgLogoIcon {
-  content: url(https://i.imgur.com/0rVbV7v.png) !important;
+  content: url(https://i.imgur.com/yv52S4U.png) !important;
 }
 
 .pageTitleWithLogo {
-  background-image: url(https://i.imgur.com/0rVbV7v.png) !important;
+  background-image: url(https://i.imgur.com/yv52S4U.png) !important;
 }
 
 /* --- Hide Guests and Cast --- */
