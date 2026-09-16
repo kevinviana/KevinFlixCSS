@@ -858,6 +858,11 @@ div.verticalSection.searchSuggestions {
   margin-bottom: 0;
 }
 
+#slides-container {
+  position: absolute;
+  top: 0;
+}
+
 /* Phone stuff */
 @media (max-width: 600px) {
   #loginPage > div {
@@ -892,4 +897,5 @@ div.verticalSection.searchSuggestions {
     width: 14px;
     height: 14px;
   }
+
 }
